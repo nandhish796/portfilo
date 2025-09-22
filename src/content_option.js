@@ -1,4 +1,5 @@
 const logotext = "NANDHISH";
+import bgimage from"../src/assets/images/background.png.jpg";
 const meta = {
     title: "Nandhish s",
     description: "I’m Nandhish Full stack devloper, currtenly studing",
@@ -11,50 +12,29 @@ const introdata = {
         second: "I love mp",
         third: "I develop website",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "I am a web developer who loves designing and coding elegant, responsive websites. My goal is to combine creativity with clean, efficient code to deliver outstanding digital experiences.",
+    your_img_url: bgimage,
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "My self",
+    aboutme: "I am a full-stack developer with experience in building responsive, high-quality web applications. I specialize in React, JavaScript, and modern front-end technologies, and I’m passionate about learning new tools to create efficient and scalable solutions. I love collaborating on projects and turning ideas into reality, always focusing on delivering a great user experience.",
 };
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
-    },
-];
-
 const skills = [{
         name: "Python",
         value: 90,
     },
     {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
+        name: "Java",
         value: 80,
     },
     {
-        name: "React",
+        name: "React.js",
         value: 60,
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "node.js",
+        value: 50,
     },
 ];
 
@@ -135,10 +115,18 @@ const dataportfolio = [{
     },
 ];
 
+const education = [
+  {
+    degree: "B.Tech in Artifical Intelligence And Machine Learning",
+    institution: "Bannari Amman Institute of Technology",
+    year: "2024 – 2027",
+  },
+];
+
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "nandhu17022006@gmail.com",
+    YOUR_FONE: "9360930189",
+    description: "Get in touch with me for collaborations, project discussions, or opportunities. I’m always open to connecting and sharing ideas. Fill out the form below or reach me directly through my social profiles.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -149,17 +137,23 @@ const contactConfig = {
 const socialprofils = {
     github: "https://github.com/nandhish796",
     linkedin: "https://www.linkedin.com/in/nandhu-nandhu-51380b328/",
-    facebook:"https://leetcode.com/u/xQxrDkxbCW/",
 };
+const projects = 
+  {
+    title: "Indian Currency Note Recognization",
+    description:"This project focuses on developing a system to recognize Indian currency notes using image processing and machine learning techniques. It is designed to improve accessibility for visually impaired individuals and enhance automation in banking and retail sectors.",
+  }
 export {
     meta,
     dataabout,
     dataportfolio,
-    worktimeline,
     skills,
     services,
     introdata,
     contactConfig,
     socialprofils,
     logotext,
+    education,
+    projects,
+
 };

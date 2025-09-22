@@ -98,3 +98,8 @@
         transform: translateZ(0);
     }
 }
+.edu-title {
+  font-weight: bold;
+  color: #f05454; /* highlight color (red accent) */
+  margin-right: 6px;
+}

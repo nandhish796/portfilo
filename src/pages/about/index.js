@@ -5,9 +5,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   dataabout,
   meta,
-  worktimeline,
+  education,
   skills,
-  services,
+  projects,
 } from "../../content_option";
 
 export const About = () => {
@@ -37,22 +37,20 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Education</h3>
           </Col>
           <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+            <tbody>
+              {education.map((edu, i) => (
+                <tr key={i}>
+                  <td>
+                    <p><span className="edu-title">Institute :</span> {edu.institution}</p>
+                    <p><span className="edu-title">Degree :</span> {edu.degree}</p>
+                    <p><span className="edu-title">Year :</span> {edu.year}</p>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
           </Col>
         </Row>
         <Row className="sec_sp">
@@ -77,23 +75,21 @@ export const About = () => {
                 </div>
               );
             })}
-          </Col>
+            </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
-          </Col>
-          <Col lg="7">
-            {services.map((data, i) => {
-              return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
-                </div>
-              );
-            })}
-          </Col>
-        </Row>
+  <Col lg="5">
+    <h3 className="color_sec py-4">Projects</h3>
+  </Col>
+  <Col lg="7" className="d-flex flex-column">
+   
+      <div className="mb-3">
+        <h5>{projects.title}</h5>
+        <p>{projects.description}</p>
+      </div>
+  </Col>
+</Row>
+
       </Container>
     </HelmetProvider>
   );
