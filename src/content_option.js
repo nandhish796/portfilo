@@ -1,15 +1,15 @@
-const logotext = "JOHN";
+const logotext = "NANDHISH";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Nandhish s",
+    description: "I’m Nandhish Full stack devloper, currtenly studing",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Nandhish ",
     animated: {
         first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        second: "I love mp",
+        third: "I develop website",
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
@@ -147,10 +147,9 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/nandhish796",
+    linkedin: "https://www.linkedin.com/in/nandhu-nandhu-51380b328/",
+    facebook:"https://leetcode.com/u/xQxrDkxbCW/",
 };
 export {
     meta,
